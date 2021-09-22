@@ -1,0 +1,17 @@
+app:
+  build: .
+  command: python app.py
+  expose:
+    - "3500"
+  ports:
+    - "3500:3500"
+  volumes:
+    - .:/app
+  links:
+    - db
+db:
+  image: mongo:latest
+  volumes:
+    - ./init-db.js:/docker-entrypoint-initdb.d/init-db.js:ro
+  ports:
+    - 27017:27017
