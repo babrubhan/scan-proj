@@ -4,12 +4,12 @@ A REST API based resource management application with JWT based authorization an
 GitHub - https://github.com/babrubhan/scan-proj <br />
 Heroku - https://scan-proj.herokuapp.com/ <br />
 
-## Run in container based envirionment:
+#### Run in container based envirionment:
 ```
   - Run docker-compose up -d
 ```  
   
-## Run in local environment:
+#### Run in local environment:
 ```
   - export ENV_FILE_LOCATION=./.env
   - export ENV_FILE_LOCATION=./.env.test
@@ -17,7 +17,7 @@ Heroku - https://scan-proj.herokuapp.com/ <br />
   - python app.py
 ``` 
   
-## Authentication details for testing:
+#### Authentication details for testing:
 ```
 POST https://scan-proj.herokuapp.com/api/v1/auth
 {
@@ -26,7 +26,7 @@ POST https://scan-proj.herokuapp.com/api/v1/auth
 }
 ```
   
-## API Endpoints:
+#### API Endpoints:
 ```
 GET https://scan-proj.herokuapp.com/api/v1/perons
 GET https://scan-proj.herokuapp.com/api/v1/perons/<id>
